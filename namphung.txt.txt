@@ -20,7 +20,8 @@ Pull Request hay merge request là chức năng cho phép bạn thông báo tớ
 Lệnh git fetch dùng để tải về dữ liệu từ Repo giúp bạn theo dõi sự thay đổi của remote, tải dữ liệu bằng git fetch chưa tích hợp thay đổi
 dữ liệu tại local repository của bạn, bạn có thể theo dõi các commit người khác đã cập nhật lên server
 5. Git merge
-Dùng để xác nhập nhánh con vào nhánh chính ( thường là nhánh master)
+Merge branch tức là bạn gộp hai branch lại với nhau, thao tác này thường dùng để merge branch khác vào branch master trước khi push lên remote repository, 
+hoặc merge hai branch thành một để giải quyết chung một task
 6. Git pull
 Git pull = git fetch + merge, Lệnh git pull trước tiên chạy git fetch để tải nội dung từ remote repository đã chỉ định. Sau đó,
 một git merge được thực thi để hợp nhất các remote content
