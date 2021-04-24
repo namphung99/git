@@ -1,1 +1,26 @@
-hello github!!!
+1.git branch
+Branch là các nhánh trong 1 repo, nội dung trong các branch khác nhau khi được chỉnh sửa sẽ không ảnh hưởng gì tới các branch khác trong repo
+ git branch : Liệt kê branch ở local
+ git branch -r : Liệt kê branch trên git server
+ git branch -a : Liệt kê toàn bộ branch
+2. git checkout, git switch
+cả 2 dùng để chuyển nhánh , và tạo nhánh mới
+    - Chuyển nhánh 
+        + git checkout < tên nhánh >
+        + git switch < tên nhánh >
+    - tạo nhánh mới 
+        + git checkout -b < tên nhánh mới >
+        + git switch -c < tên nhánh mới >
+so với git switch thì git checkout có độ phổ biến cao hơn
+git checkout -- <tên file> dùng để loại bỏ thay đổi gần nhất trong file
+3.Pull request/Merge request
+Pull Request hay merge request là chức năng cho phép bạn thông báo tới chủ repository về các thay đổi bạn đã push lên repository 
+4.git fetch
+
+Lệnh git fetch dùng để tải về dữ liệu từ Repo giúp bạn theo dõi sự thay đổi của remote, tải dữ liệu bằng git fetch chưa tích hợp thay đổi
+dữ liệu tại local repository của bạn, bạn có thể theo dõi các commit người khác đã cập nhật lên server
+5. Git merge
+Dùng để xác nhập nhánh con vào nhánh chính ( thường là nhánh master)
+6. Git pull
+Git pull = git fetch + merge, Lệnh git pull trước tiên chạy git fetch để tải nội dung từ remote repository đã chỉ định. Sau đó,
+một git merge được thực thi để hợp nhất các remote content
